@@ -125,19 +125,17 @@ public class ScopeAcess : MonoBehaviour
 
 public class ScopeAccess : MonoBehavior
 {
-  
-    public int MrPresident = 1;
+    public bool MrPresident = true;
 
     void Start()
     {
-      if(1 == 1)
+      if(true)
       {
-        print("Here are the Top Secret files Mr. President."):
+        print("Here are the Top Secret files Mr. President.");
       }
       else
       {
         print("Sorry, but this information is classified");
       }
     }
-  
 }
