@@ -48,6 +48,45 @@ public class Scopes : MonoBehaviour
   }
 }
 
+//Now onto Access Modifiers (as of this class, we're only focusing on "Public" & "Private").
+
 4. 
 
+//The main purpose of the "Public" Access Modifier, is to make the functions within the script to appear in Unity's Inspector window; and for it to interact with other scripts. For now, here's for the Inspector. In this example, we see that the "int Coin = 0;" has been set to public, therefore it can be seen in Unity's Inspector, and (within Unity) the value of "Coin" can easily be changed.
+
+public class Scopes : MonoBehaviour
+{
+  public int Coin = 0; 
+}
+
+5.
+
+//But what if you change Coin's value in the .cs/C# script? Now the value of "Coin" is defaulted to 5. (For me, after I save the script file, I go back into Unity, and nothing seems to have changed. But after you assinged the script to a GameObject, and see it in the Inspector, There should be a little "gear icon", click on it, the click reset. Now "5" should be the default number according to Unity.)
+
+public class Scopes : MonoBehaviour
+{
+  public int Coin = 5; 
+}
+
+6.
+
+//The purpose of the "Private" Access Modifier is to help you, other users & scripts, from accidentally messing with the current script/code that you're working with. It also prevents it from functions being seen in Unity's Inspector.
+
+public class Scopes : MonoBehaviour
+{
+  private int Coin = 0; 
+}
+
+7.
+
+//An alternate (but un-reccommended) way to make a function Private, is by not using any Access Modifier at all. Its preferred to actually type "Private" before a function, so it doesn't look like its just some random code sitting in your script, not doing anything at all.
+
+public class Scopes : MonoBehaviour
+{
+  int Coin = 0; 
+}
+
+8.
+
 //
+
